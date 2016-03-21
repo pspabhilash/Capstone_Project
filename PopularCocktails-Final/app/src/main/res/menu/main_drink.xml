@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:state_focused="true"
+        android:icon="@drawable/ic_swap_vert_white_24dp"
+        app:showAsAction="ifRoom" >
+    <menu>
+        <group android:checkableBehavior="single">
+            <item android:id="@+id/action_showall"
+                android:state_focused="true"
+                android:title="@string/action_sort_by_all" />
+            <item android:id="@+id/action_alcoholic"
+                android:state_focused="true"
+                android:title="@string/action_sort_by_alcoholic" />
+            <item android:id="@+id/action_non_alcoholic"
+                android:state_focused="true"
+                android:title="@string/action_sort_by_non_alcoholic" />
+            <item android:id="@+id/favourite_drinks"
+                android:state_focused="true"
+                android:title="@string/favourite_drinks" />
+        </group>
+    </menu>
+ </item>
+    <item android:id="@+id/action_share"
+        android:title="@string/share"
+        android:icon="@drawable/ic_menu_send"
+        app:showAsAction="ifRoom"
+        android:state_focused="true"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+
+</menu>
