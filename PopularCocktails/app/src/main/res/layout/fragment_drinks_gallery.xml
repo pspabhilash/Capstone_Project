@@ -1,0 +1,29 @@
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- TODO: Update blank fragment layout -->
+    <GridView
+        android:id="@+id/gridDrinks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/gridview_list"
+        android:numColumns="auto_fit"
+        android:columnWidth="@dimen/grid_item_width"
+        android:verticalSpacing="@dimen/main_grid_vertical_spacing"
+        android:horizontalSpacing="@dimen/main_grid_horizontal_spacing"
+        android:padding="@dimen/main_grid_horizontal_spacing"
+        android:drawSelectorOnTop="true"
+        />
+
+    <TextView
+        android:id="@+id/empty_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_fav_drinks"
+        android:textColor="#404040"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

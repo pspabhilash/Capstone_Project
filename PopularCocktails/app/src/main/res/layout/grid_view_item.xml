@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- http://www.ixtendo.com/how-to-add-a-caption-text-over-an-image-in-android/ -->
+<android.support.v7.widget.CardView    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/griditem_image"
+            android:id="@+id/cocktailImage"
+            android:src="@drawable/ic_icon"
+            android:adjustViewBounds="true"
+            android:foreground="@drawable/gradient"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/cocktailName"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/cocktailImage"
+            android:contentDescription="@string/griditem_name"
+            android:textSize="@dimen/grid_view_item_header_text_size"
+            android:layout_marginStart="@dimen/grid_view_item_header_margin_left"
+            android:layout_marginTop="@dimen/grid_view_item_header_margin_top"
+            android:layout_marginEnd="@dimen/grid_view_item_header_margin_right"
+            android:layout_marginBottom="@dimen/grid_view_item_header_margin_bottom" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

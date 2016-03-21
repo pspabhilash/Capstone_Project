@@ -1,0 +1,21 @@
+<resources>
+    <string name = "ga_trackingId">UA-74219638-1</string>
+
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+
+
+    <screenName name= "com.myapp.abhilash.new_cocktails.DrinksGalleryActivity">Cocktail List</screenName>
+    <screenName name= "com.myapp.abhilash.new_cocktails.DrinksGalleryFragment">Cocktail list fragment</screenName>
+    <screenName name= "com.myapp.abhilash.new_cocktails.DrinkDetailActivity">Drink Detail Activity</screenName>
+    <screenName name= "com.myapp.abhilash.new_cocktails.DrinkDetailFragment">Drink Detail Fragment</screenName>
+    <screenName name= "com.myapp.abhilash.new_cocktails.about.AboutActivity"> About Activity</screenName>
+    <screenName name= "com.myapp.abhilash.new_cocktails.DrinksGalleryActivity">About Fragment</screenName>
+
+    </resources>
